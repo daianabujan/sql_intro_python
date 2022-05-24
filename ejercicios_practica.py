@@ -136,7 +136,8 @@ def modify(id, name):
     rowcount = c.execute("UPDATE estudiante SET name =? WHERE id =?",
                          (name, id)).rowcount
     print('Filas actualizadas:', rowcount)
-    
+    conn.commit()
+
     # Para chequear todos los cambios
     c.execute('SELECT * FROM estudiante')
     data = c.fetchall()
