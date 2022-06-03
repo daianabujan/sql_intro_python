@@ -77,7 +77,7 @@ def regiones(data):
 if __name__ == "__main__":
 
   data = fetch()
-
+  
   #Data analytics
   show(data)
   estadistica(data)
